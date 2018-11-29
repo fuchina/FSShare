@@ -1,0 +1,16 @@
+PODS:
+  - FSShare (0.0.1)
+
+DEPENDENCIES:
+  - FSShare (from `../`)
+
+EXTERNAL SOURCES:
+  FSShare:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FSShare: 0c2394dcd4df67e315fb180554a6ca439a71add5
+
+PODFILE CHECKSUM: e7022fcd365c9aee92a2eb9d5502cd98753cb5d7
+
+COCOAPODS: 1.6.0.beta.2

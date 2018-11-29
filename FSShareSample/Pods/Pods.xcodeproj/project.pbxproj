@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		717DC273F82DC33F27220509868FC390 /* FSShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 075912F50984B48FF7ACAFD1FCAA4C97 /* FSShare-dummy.m */; };
+		920B44EDF1F2C876C4F2676EEBC69AAA /* FSShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 70BB99C0C7BB2F1488A5B2997D766E19 /* FSShare.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9434BF06C8BC9C2E53A5D32ED2503ACD /* Pods-FSShareSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 052FDD87C5497E388741AC04592349C3 /* Pods-FSShareSample-dummy.m */; };
+		FCDA9609D93832F1D793194C951B758D /* FSShare.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BF0F8F52BDB02AE4542B247DCE96B5 /* FSShare.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D424790C68ECD9E487B7B7C7D20B0E52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB5FA06AA80183C569DFFD089C55C84B;
+			remoteInfo = FSShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01EC3831F52695095C3C08524E880AD1 /* FSShare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSShare.xcconfig; sourceTree = "<group>"; };
+		052FDD87C5497E388741AC04592349C3 /* Pods-FSShareSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSShareSample-dummy.m"; sourceTree = "<group>"; };
+		075912F50984B48FF7ACAFD1FCAA4C97 /* FSShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSShare-dummy.m"; sourceTree = "<group>"; };
+		305BE939D40BF5741A1C2128103175DC /* Pods-FSShareSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSShareSample.release.xcconfig"; sourceTree = "<group>"; };
+		5BE88FA87AD8E55176842469507A4314 /* libPods-FSShareSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FSShareSample.a"; path = "libPods-FSShareSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70564DB25F23567712097A257821B059 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		70BB99C0C7BB2F1488A5B2997D766E19 /* FSShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSShare.h; path = FSShare/Classes/FSShare.h; sourceTree = "<group>"; };
+		7353361C8CEB92F84926CBEFE5F3E5DA /* FSShare.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FSShare.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7C193FAE19C3E60BE1CCD859808EAF68 /* libFSShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFSShare.a; path = libFSShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7DD598E0D092A935C249B3DF0931E3 /* FSShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSShare-prefix.pch"; sourceTree = "<group>"; };
+		A9CE1FABE5A54F4E8B46A28188E3B232 /* Pods-FSShareSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSShareSample.debug.xcconfig"; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2856E83C7AD60BA1656E3C82436F134 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C5BF0F8F52BDB02AE4542B247DCE96B5 /* FSShare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSShare.m; path = FSShare/Classes/FSShare.m; sourceTree = "<group>"; };
+		D8AE2165008366FB8FBE471DAD098C0A /* Pods-FSShareSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FSShareSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0CC71762BE19033159DD8A677858FF2 /* Pods-FSShareSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FSShareSample-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51E644F914C5683A553CB4EFFA4D4099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8569B868452183D21ABEAB56C69DC7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09E3E093422B2F10BE379DB76CD41A17 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F94947B9309A8D391DEC5CC01FF4FFC /* Pods-FSShareSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		648EC6A239A8874B0280DA855A1DC32B /* FSShare */ = {
+			isa = PBXGroup;
+			children = (
+				70BB99C0C7BB2F1488A5B2997D766E19 /* FSShare.h */,
+				C5BF0F8F52BDB02AE4542B247DCE96B5 /* FSShare.m */,
+				B9B0D67CA70455E9EC58161689CC9E29 /* Pod */,
+				ECA0BB1AF038DA3B5014ED9B26A64495 /* Support Files */,
+			);
+			name = FSShare;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6A9C4B4E2518E431388E7923015E4055 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C193FAE19C3E60BE1CCD859808EAF68 /* libFSShare.a */,
+				5BE88FA87AD8E55176842469507A4314 /* libPods-FSShareSample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				EA01AF93AE86A821EC30D16ABE8A3F83 /* Development Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				6A9C4B4E2518E431388E7923015E4055 /* Products */,
+				09E3E093422B2F10BE379DB76CD41A17 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F94947B9309A8D391DEC5CC01FF4FFC /* Pods-FSShareSample */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE2165008366FB8FBE471DAD098C0A /* Pods-FSShareSample-acknowledgements.markdown */,
+				E0CC71762BE19033159DD8A677858FF2 /* Pods-FSShareSample-acknowledgements.plist */,
+				052FDD87C5497E388741AC04592349C3 /* Pods-FSShareSample-dummy.m */,
+				A9CE1FABE5A54F4E8B46A28188E3B232 /* Pods-FSShareSample.debug.xcconfig */,
+				305BE939D40BF5741A1C2128103175DC /* Pods-FSShareSample.release.xcconfig */,
+			);
+			name = "Pods-FSShareSample";
+			path = "Target Support Files/Pods-FSShareSample";
+			sourceTree = "<group>";
+		};
+		B9B0D67CA70455E9EC58161689CC9E29 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7353361C8CEB92F84926CBEFE5F3E5DA /* FSShare.podspec */,
+				70564DB25F23567712097A257821B059 /* LICENSE */,
+				C2856E83C7AD60BA1656E3C82436F134 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EA01AF93AE86A821EC30D16ABE8A3F83 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				648EC6A239A8874B0280DA855A1DC32B /* FSShare */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		ECA0BB1AF038DA3B5014ED9B26A64495 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01EC3831F52695095C3C08524E880AD1 /* FSShare.xcconfig */,
+				075912F50984B48FF7ACAFD1FCAA4C97 /* FSShare-dummy.m */,
+				7D7DD598E0D092A935C249B3DF0931E3 /* FSShare-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "FSShareSample/Pods/Target Support Files/FSShare";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43BB0C0A541800B65135DCCCF1117FEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D28AC19454BF31CEC48AD7DE2E377E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920B44EDF1F2C876C4F2676EEBC69AAA /* FSShare.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27CAEEBE1B64260D2740A534143B085E /* Pods-FSShareSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C026AEFDAC60995183ED00593DCA10 /* Build configuration list for PBXNativeTarget "Pods-FSShareSample" */;
+			buildPhases = (
+				43BB0C0A541800B65135DCCCF1117FEB /* Headers */,
+				1B12CBD20485441C9A141F0CA47FBF96 /* Sources */,
+				E8569B868452183D21ABEAB56C69DC7B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53FDFAF7BD815313552E2432679D7D37 /* PBXTargetDependency */,
+			);
+			name = "Pods-FSShareSample";
+			productName = "Pods-FSShareSample";
+			productReference = 5BE88FA87AD8E55176842469507A4314 /* libPods-FSShareSample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FB5FA06AA80183C569DFFD089C55C84B /* FSShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9744BA3C0836F0B6A6CC4A05BBE2B586 /* Build configuration list for PBXNativeTarget "FSShare" */;
+			buildPhases = (
+				B1D28AC19454BF31CEC48AD7DE2E377E /* Headers */,
+				8558013D83C956B29874F0EA7042859D /* Sources */,
+				51E644F914C5683A553CB4EFFA4D4099 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSShare;
+			productName = FSShare;
+			productReference = 7C193FAE19C3E60BE1CCD859808EAF68 /* libFSShare.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6A9C4B4E2518E431388E7923015E4055 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB5FA06AA80183C569DFFD089C55C84B /* FSShare */,
+				27CAEEBE1B64260D2740A534143B085E /* Pods-FSShareSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B12CBD20485441C9A141F0CA47FBF96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9434BF06C8BC9C2E53A5D32ED2503ACD /* Pods-FSShareSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8558013D83C956B29874F0EA7042859D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717DC273F82DC33F27220509868FC390 /* FSShare-dummy.m in Sources */,
+				FCDA9609D93832F1D793194C951B758D /* FSShare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53FDFAF7BD815313552E2432679D7D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSShare;
+			target = FB5FA06AA80183C569DFFD089C55C84B /* FSShare */;
+			targetProxy = D424790C68ECD9E487B7B7C7D20B0E52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		472F018CD6F9F58E706578980D1BA98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01EC3831F52695095C3C08524E880AD1 /* FSShare.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FSShare/FSShare-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FSShare;
+				PRODUCT_NAME = FSShare;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89FF79E6B0AA65A74E9072EAA75427EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CE1FABE5A54F4E8B46A28188E3B232 /* Pods-FSShareSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F234EBC3C8B17935BC2954B2262540F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01EC3831F52695095C3C08524E880AD1 /* FSShare.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FSShare/FSShare-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FSShare;
+				PRODUCT_NAME = FSShare;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE01AF5D395AE305A54D518A9B774D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CAB15803A1E4D62DBC469DA4E2E772AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305BE939D40BF5741A1C2128103175DC /* Pods-FSShareSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */,
+				BE01AF5D395AE305A54D518A9B774D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C026AEFDAC60995183ED00593DCA10 /* Build configuration list for PBXNativeTarget "Pods-FSShareSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89FF79E6B0AA65A74E9072EAA75427EF /* Debug */,
+				CAB15803A1E4D62DBC469DA4E2E772AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9744BA3C0836F0B6A6CC4A05BBE2B586 /* Build configuration list for PBXNativeTarget "FSShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472F018CD6F9F58E706578980D1BA98F /* Debug */,
+				8F234EBC3C8B17935BC2954B2262540F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
