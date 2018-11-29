@@ -7,10 +7,10 @@
 //
 
 #import "FSShare.h"
-#import "FSKitDuty.h"
 #import <MessageUI/MessageUI.h>
-#import "FSToast.h"
+#import <FSToast.h>
 #import <FSUIKit.h>
+#import <FSKit.h>
 
 @interface FSShare ()<MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate>
 

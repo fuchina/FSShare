@@ -19,5 +19,19 @@
     "ios": "8.0"
   },
   "source_files": "FSShare/Classes/*",
-  "frameworks": "UIKit"
+  "frameworks": "UIKit",
+  "dependencies": {
+    "WechatOpenSDK": [
+      "1.8.3"
+    ],
+    "FSUIKit": [
+
+    ],
+    "FSToast": [
+
+    ],
+    "FSKit": [
+
+    ]
+  }
 }

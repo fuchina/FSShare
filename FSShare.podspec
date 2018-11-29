@@ -14,5 +14,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'FSShare/Classes/*'
   s.frameworks = 'UIKit'
+  
+  s.dependency   'WechatOpenSDK','1.8.3'
+  s.dependency   'FSUIKit'
+  s.dependency   'FSToast'
+  s.dependency   'FSKit'  
 
 end
