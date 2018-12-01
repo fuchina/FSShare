@@ -27,6 +27,15 @@ static FSShare *_instance = nil;
     return _instance;
 }
 
++ (void)wechatAPIRegisterAppKey:(NSString *)appKey{
+#if TARGET_IPHONE_SIMULATOR
+#else
+    if ([appKey isKindOfClass:NSString.class] && appKey.length) {
+        [WXApi registerApp:appKey];
+    }
+#endif
+}
+
 + (BOOL)handleOpenUrl:(NSURL *)url{
     FSShare *share = [[FSShare alloc] init];
     return [WXApi handleOpenURL:url delegate:share];

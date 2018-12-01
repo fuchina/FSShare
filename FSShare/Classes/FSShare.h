@@ -11,6 +11,8 @@
 
 @interface FSShare : NSObject<WXApiDelegate>
 
++ (void)wechatAPIRegisterAppKey:(NSString *)appKey;
+
 +(FSShare *)sharedInstance;
 
 @property (nonatomic,copy) void (^result)(BOOL bSatus,NSString *bMessage);
