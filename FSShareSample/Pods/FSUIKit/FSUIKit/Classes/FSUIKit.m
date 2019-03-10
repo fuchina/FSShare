@@ -7,7 +7,6 @@
 
 #import "FSUIKit.h"
 #import "FSWindow.h"
-#import "FSKit.h"
 #import "FSCalculator.h"
 
 static CGRect oldframe;
@@ -199,7 +198,7 @@ static CGRect oldframe;
     if (![message respondsToSelector:@selector(length)] || [message length] == 0) {
         return;
     }
-    _fs_dispatch_main_queue_async(^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         [self showMessageInMainThread:message];
     });
 }
@@ -566,29 +565,6 @@ static CGRect oldframe;
     UIGraphicsEndImageContext();
     return newimg;
 }
-
-+ (UIImage *)imageFromColor:(UIColor *)color{
-    CGRect rect = CGRectMake(0, 0, 1, 10);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return img;
-}
-
-+ (UIImage *)imageFromColor:(UIColor *)color size:(CGSize)size{
-    CGRect rect = CGRectMake(0, 0, size.width, size.height);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return img;
-}
-
 
 + (UIImage *)QRImageFromString:(NSString *)sourceString{
     if (sourceString == nil) {

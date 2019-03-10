@@ -1,17 +1,18 @@
 PODS:
   - FSCalculator (0.0.1)
   - FSKit (1.3.2.2)
-  - FSShare (0.0.1):
+  - FSShare (0.1):
     - FSKit
     - FSToast
     - FSUIKit
     - WechatOpenSDK (= 1.8.3)
   - FSToast (0.0.1)
-  - FSUIKit (0.0.2):
+  - FSUIKit (0.0.8):
     - FSCalculator
-    - FSKit
     - FSWindow
+    - MJRefresh (= 3.1.15.7)
   - FSWindow (0.0.1)
+  - MJRefresh (3.1.15.7)
   - WechatOpenSDK (1.8.3)
 
 DEPENDENCIES:
@@ -24,6 +25,7 @@ SPEC REPOS:
     - FSToast
     - FSUIKit
     - FSWindow
+    - MJRefresh
     - WechatOpenSDK
 
 EXTERNAL SOURCES:
@@ -33,12 +35,13 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FSCalculator: 3ab79307b008ebf07b4fa7fe827f418d7c65fd14
   FSKit: 1578169720d621fb12b806a8d0faf8ba95afb0e2
-  FSShare: bf2aa610cb248c7758940dccb9652a103341b9d2
+  FSShare: bb90a86b4eb93086a825af357d4e4626dcb69485
   FSToast: c168e006b160e4305f6bf828da66cdffcc20dbe7
-  FSUIKit: 2b7389799a0db86bfcdcf87adc71821d285671e4
+  FSUIKit: 393ca90863cb6007b46d36fd20b39bb240b39fe3
   FSWindow: 54dce45874a001ba7761303c89f478a7b9197ad2
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
 
-PODFILE CHECKSUM: e7022fcd365c9aee92a2eb9d5502cd98753cb5d7
+PODFILE CHECKSUM: d8093466d63b8fc524de7ebfb87d1295b6b45ab9
 
 COCOAPODS: 1.6.0.beta.2

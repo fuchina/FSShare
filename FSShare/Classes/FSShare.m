@@ -64,7 +64,7 @@ static FSShare *_instance = nil;
     if (!hasInstalled) {
         return;
     }
-    
+        
     UIImage *thumbImage = [FSImage compressImage:image width:50];
     
     WXMediaMessage *message = [WXMediaMessage message];
