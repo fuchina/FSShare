@@ -13,7 +13,9 @@
 #import <FSKit.h>
 #import <FSImage.h>
 
-@interface FSShare ()<MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate>
+@interface FSShare ()<MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate,UIDocumentInteractionControllerDelegate>
+
+@property (nonatomic, strong) UIDocumentInteractionController   *documentController;
 
 @end
 
@@ -270,5 +272,21 @@ static FSShare *_instance = nil;
     }
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (void)openUIDocumentInteractionController:(NSURL *)fileURL inController:(UIViewController *)controller{
+    if (fileURL) {
+        if (!self.documentController) {
+            self.documentController = [UIDocumentInteractionController interactionControllerWithURL:fileURL];
+            [self.documentController setDelegate:self];
+        }else{
+            self.documentController.URL = fileURL;
+        }
+        BOOL canOpen =  [self.documentController presentOpenInMenuFromRect:CGRectZero inView:controller.view animated:YES];
+        if (canOpen == NO) {
+            [FSUIKit showAlertWithMessage:@"出现问题，不能打开" controller:controller];
+        }
+    }
+}
+
 
 @end

@@ -41,4 +41,7 @@
 + (void)emailShareWithSubject:(NSString *)subject on:(UIViewController *)c messageBody:(NSString *)body recipients:(NSArray *)recipients fileData:(NSData *)data fileName:(NSString *)fileName mimeType:(NSString *)fileType;
 - (void)emailShareWithSubject:(NSString *)subject on:(UIViewController *)controller  messageBody:(NSString *)body recipients:(NSArray *)recipients fileData:(NSData *)data fileName:(NSString *)fileName mimeType:(NSString *)fileType;
 
+// 打开UIDocumentInteractionController
+- (void)openUIDocumentInteractionController:(NSURL *)fileURL inController:(UIViewController *)controller;
+
 @end
