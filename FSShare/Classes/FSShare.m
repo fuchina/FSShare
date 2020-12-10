@@ -201,7 +201,7 @@ static FSShare *_instance = nil;
             msg = @"邮件保存成功";
             break;
         case MFMailComposeResultSent:
-            msg = NSLocalizedString(@"The mail push success", nil);
+            msg = @"邮件推送成功";
             break;
         case MFMailComposeResultFailed:
             msg = @"邮件发送失败";
