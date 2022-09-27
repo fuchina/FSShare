@@ -273,7 +273,7 @@ static FSShare *_instance = nil;
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)openUIDocumentInteractionController:(NSURL *)fileURL inController:(UIViewController *)controller{
+- (void)openUIDocumentInteractionController:(NSURL *)fileURL inController:(UIViewController *)controller {
     if (fileURL) {
         if (!self.documentController) {
             self.documentController = [UIDocumentInteractionController interactionControllerWithURL:fileURL];
@@ -286,6 +286,10 @@ static FSShare *_instance = nil;
             [FSUIKit showAlertWithMessage:@"出现问题，不能打开" controller:controller];
         }
     }
+}
+
+- (void)documentInteractionControllerDidDismissOpenInMenu:(UIDocumentInteractionController *)controller {
+    self.documentController = nil;
 }
 
 
