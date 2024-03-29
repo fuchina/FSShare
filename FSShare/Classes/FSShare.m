@@ -153,7 +153,9 @@ static FSShare *_instance = nil;
             NSString *url = [WXApi getWXAppInstallUrl];
             NSURL *u = [NSURL URLWithString: url];
             if ([UIApplication.sharedApplication canOpenURL: u]) {
-                [UIApplication.sharedApplication openURL: u options: @{} completionHandler:^(BOOL success) {}];
+                if (@available(iOS 10.0, *)) {
+                    [UIApplication.sharedApplication openURL: u options: @{} completionHandler:^(BOOL success) {}];
+                }
             }
         }];
     }
