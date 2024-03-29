@@ -62,7 +62,7 @@ static FSShare *_instance = nil;
 #endif
         return;
     }
-    BOOL hasInstalled = [self checkPhoneHasWechat];
+    BOOL hasInstalled = [self checkPhoneHasWechat: controller];
     if (!hasInstalled) {
         return;
     }
@@ -84,12 +84,12 @@ static FSShare *_instance = nil;
 }
 
 // 微信文件分享
-+ (void)wxFileShareActionWithPath:(NSString *)path fileName:(NSString *)fileName extension:(NSString *)extension result:(void(^)(NSString *bResult))completion{
++ (void)wxFileShareActionWithPath:(NSString *)path fileName:(NSString *)fileName extension:(NSString *)extension controller:(UIViewController *)controller result:(void(^)(NSString *bResult))completion{
     NSFileManager *manager = [NSFileManager defaultManager];
     if ((![manager fileExistsAtPath:path]) || fileName == nil || extension == nil) {
         return;
     }
-    BOOL hasInstalled = [self checkPhoneHasWechat];
+    BOOL hasInstalled = [self checkPhoneHasWechat: controller];
     if (!hasInstalled) {
         return;
     }
@@ -110,11 +110,11 @@ static FSShare *_instance = nil;
     [WXApi sendReq:req];
 }
 
-+ (void)wxContentShare:(NSString *)content scene:(int)scene{
++ (void)wxContentShare:(NSString *)content scene:(int)scene controller:(UIViewController *)controller {
     if (!_fs_isValidateString(content)) {
         return;
     }
-    BOOL hasInstalled = [self checkPhoneHasWechat];
+    BOOL hasInstalled = [self checkPhoneHasWechat: controller];
     if (!hasInstalled) {
         return;
     }
@@ -125,8 +125,8 @@ static FSShare *_instance = nil;
     [WXApi sendReq:req];
 }
 
-+ (void)wxUrlShareTitle:(NSString *)title description:(NSString *)description url:(NSString *)url{
-    BOOL hasInstalled = [self checkPhoneHasWechat];
++ (void)wxUrlShareTitle:(NSString *)title description:(NSString *)description url:(NSString *)url controller:(UIViewController *)controller {
+    BOOL hasInstalled = [self checkPhoneHasWechat: controller];
     if (!hasInstalled) {
         return;
     }
@@ -146,10 +146,10 @@ static FSShare *_instance = nil;
     [WXApi sendReq:req];
 }
 
-+ (BOOL)checkPhoneHasWechat{
++ (BOOL)checkPhoneHasWechat:(UIViewController *)controller {
     BOOL hasInstalledWeChat = [WXApi isWXAppInstalled];
     if (!hasInstalledWeChat) {
-        [FSUIKit alertOnCustomWindow:UIAlertControllerStyleAlert title:@"微信分享" message:@"您尚未安装微信，是否去下载？" actionTitles:@[@"下载"] styles:@[@(UIAlertActionStyleDefault)] handler:^(UIAlertAction *action) {
+        [FSUIKit alert: UIAlertControllerStyleAlert controller: controller title: @"微信分享" message: @"未安装微信，是否去下载？" actionTitles: @[@"下载"] styles: @[@(UIAlertActionStyleDefault)] handler:^(FSAlertAction *action) {
             NSString *url = [WXApi getWXAppInstallUrl];
             NSURL *u = [NSURL URLWithString: url];
             if ([UIApplication.sharedApplication canOpenURL: u]) {

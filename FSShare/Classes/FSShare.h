@@ -23,13 +23,13 @@
 + (void)wxImageShareActionWithImage:(UIImage *)image controller:(UIViewController *)controller result:(void(^)(NSString *bResult))completion;
 
 // 微信文件分享【@fileName不要带扩展名】
-+ (void)wxFileShareActionWithPath:(NSString *)path fileName:(NSString *)fileName extension:(NSString *)extension result:(void(^)(NSString *bResult))completion;
++ (void)wxFileShareActionWithPath:(NSString *)path fileName:(NSString *)fileName extension:(NSString *)extension controller:(UIViewController *)controller result:(void(^)(NSString *bResult))completion;
 
 // 微信文字分享
-+ (void)wxContentShare:(NSString *)content scene:(int)scene;
++ (void)wxContentShare:(NSString *)content scene:(int)scene controller:(UIViewController *)controller;
 
 // 微信url分享
-+ (void)wxUrlShareTitle:(NSString *)title description:(NSString *)description url:(NSString *)url;
++ (void)wxUrlShareTitle:(NSString *)title description:(NSString *)description url:(NSString *)url controller:(UIViewController *)controller;
 
 // 短信分享
 + (void)messageShareWithMessage:(NSString *)message on:(UIViewController *)controller recipients:(NSArray *)recipients;
