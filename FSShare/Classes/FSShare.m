@@ -151,8 +151,9 @@ static FSShare *_instance = nil;
     if (!hasInstalledWeChat) {
         [FSUIKit alertOnCustomWindow:UIAlertControllerStyleAlert title:@"微信分享" message:@"您尚未安装微信，是否去下载？" actionTitles:@[@"下载"] styles:@[@(UIAlertActionStyleDefault)] handler:^(UIAlertAction *action) {
             NSString *url = [WXApi getWXAppInstallUrl];
-            if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:url]]) {
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+            NSURL *u = [NSURL URLWithString: url];
+            if ([UIApplication.sharedApplication canOpenURL: u]) {
+                [UIApplication.sharedApplication openURL: u options: @{} completionHandler:^(BOOL success) {}];
             }
         }];
     }
