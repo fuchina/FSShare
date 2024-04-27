@@ -45,21 +45,22 @@ static FSShare *_instance = nil;
 }
 
 #pragma mark WXDelegate
--(void)onReq:(BaseReq*)req{
+-(void)onReq:(BaseReq*)req {
 }
 
--(void)onResp:(BaseResp*)resp{
+-(void)onResp:(BaseResp*)resp {
     if([resp isKindOfClass:SendMessageToWXResp.class]){   // SendAuthResp
-        [FSUIKit showMessage:resp.errStr];
+        UIWindowScene *ws = [FSKit currentWindowScene];
+        if (@available(iOS 15.0, *)) {
+            [FSUIKit showAlertWithMessage: resp.errStr controller: ws.keyWindow.rootViewController];
+        }
     }
 }
 
 // 微信分享图片
 + (void)wxImageShareActionWithImage:(UIImage *)image controller:(UIViewController *)controller result:(void(^)(NSString *bResult))completion{
     if (!([image isKindOfClass:[UIImage class]] && image.size.width > 1 && image.size.height > 1)) {
-#if DEBUG
-        [FSUIKit showMessage:@"您分享的不是图片"];
-#endif
+        [FSUIKit showAlertWithMessage: @"分享的不是图片" controller: controller];
         return;
     }
     BOOL hasInstalled = [self checkPhoneHasWechat: controller];
