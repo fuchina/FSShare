@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WXApi.h>
+#import "WXApi.h"
 
 @interface FSShare : NSObject<WXApiDelegate>
 
