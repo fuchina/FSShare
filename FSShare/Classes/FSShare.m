@@ -8,7 +8,6 @@
 
 #import "FSShare.h"
 #import <MessageUI/MessageUI.h>
-#import "FSToast.h"
 #import "FSUIKit.h"
 #import "FSKit.h"
 #import "FSImage.h"
@@ -217,7 +216,7 @@ static FSShare *_instance = nil;
     if (msg) {
         [FSToast show:msg];
     }
-    [controller dismissViewControllerAnimated:YES completion:nil];
+    [controller dismissViewControllerAnimated: YES completion: nil];
 }
 
 // 短信分享
@@ -272,6 +271,7 @@ static FSShare *_instance = nil;
             break;
     }
     if (msg) {
+        
         [FSToast show:msg];
     }
     [controller dismissViewControllerAnimated:YES completion:nil];

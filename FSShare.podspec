@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   
   s.dependency   'WechatOpenSDK','1.8.3'
   s.dependency   'FSUIKit'
-  s.dependency   'FSToast'
+  #s.dependency   'FSToast'
   s.dependency   'FSKit'  
 
 end
